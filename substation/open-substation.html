@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>分站</title>
+    <script src="../js/font-size.js"> </script>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/substation/open-substation.css" />
+</head>
+
+<body>
+    <div id="container" class="container">
+        <div class="content">
+            <div class="flex-top-black">
+                <img class="flex-left-img" src="../image/substation/icon，houtui@2x.png" alt="">
+                <span>自助开通分站</span>
+            </div>
+            <div class="content-open">
+                <ul>
+                    <li>
+                        <div class="open-btn">
+                            <a href="">分站详细介绍</a>
+                            <a href="">分站详细介绍</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="open-li">
+                            <span>分站版本</span><input type="text" placeholder="普及版0元"><i></i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="open-tow-li">
+                            <div class="tow-left">
+                                二级域名
+                            </div>
+                            <div class="tow-right">
+                                <p>输入你想要的二级域名</p>
+                                <input type="text" placeholder="71.com">
+                                <i></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="open-p">二级前缀请填写字母或数字，字母数字组合</p>
+                    </li>
+                    <li>
+                        <div class="open-li">
+                            <span>分站版本</span><input type="text" placeholder="普及版0元">
+                        </div>
+                    </li>
+                    <li>
+                        <p class="open-p">二级前缀请填写字母或数字，字母数字组合</p>
+                    </li>
+                    <li>
+                        <div class="open-li">
+                            <span>分站版本</span><input type="text" placeholder="普及版0元">
+                        </div>
+                    </li>
+                    <li>
+                        <p class="open-p">二级前缀请填写字母或数字，字母数字组合</p>
+                    </li>
+                    <li>
+                        <div class="open-li">
+                            <span>分站版本</span><input type="text" placeholder="普及版0元">
+                        </div>
+                    </li>
+                    <li>
+                        <p class="open-p">二级前缀请填写字母或数字，字母数字组合</p>
+                    </li>
+                    <li>
+                        <div class="open-li">
+                            <span>分站版本</span><input type="text" placeholder="普及版0元">
+                        </div>
+                    </li>
+                    <li>
+                        <p class="open-p">二级前缀请填写字母或数字，字母数字组合</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="open-ok">
+                <button class="ok-btn">点击立刻拥有分站</button>
+                <div class="back-text">
+                    <span><i><img src="../image/substation/icon，zhaohuimima@2x.png" alt=""></i><a
+                            href="">找回密码</a></span>
+                    <span><i><img src="../image/substation/icon，fanhuidenglu@2x.png" alt=""></i><a
+                            href="">返回登陆</a></span>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            function fiexdTop() {
+                var flextopblack = document.getElementsByClassName('flex-top-black')[0];
+                var docH = document.documentElement.clientHeight;
+                var docW = document.documentElement.clientWidth;
+                if (docW / docH > 1) {
+                    flextopblack.classList.add('flex-js');
+                }
+            }
+            fiexdTop();
+            function historyGo() {
+                var flexleftimg = document.getElementsByClassName('flex-left-img')[0];
+                flexleftimg.onclick = function () {
+                    window.history.go(-1)
+                }
+            }
+            historyGo()
+        }
+    </script>
+</body>
+
+</html>

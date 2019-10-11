@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <script src="js/font-size.js"> </script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+    <div id="container" class="container">
+        <div class="content">
+            <div class="content-top">
+                <div class="search">
+                    <input type="text" placeholder="输入关键词、支持关键字搜索、以空格隔开">
+                    <i></i>
+                </div>
+                <div class="banner">
+                    <img src="image/Banner@2x.png" alt="">
+                </div>
+
+            </div>
+            <div class="content-middle">
+                <div class="middle">
+                    <div class="notice">
+                        <ul>
+                            <li id="noticBox">
+                                <i class="rightI"></i>
+                                公告
+                                <i class="rightR"></i>
+                            </li>
+                            <li>
+                                <i class="rightN">1</i>
+                                售后问题可直接联系平台在线QQ客服
+
+                            </li>
+                            <li>
+                                <i class="rightN">2</i>
+                                价格贵？不怕，点击0元搭建，在后台超低价下单！
+
+                            </li>
+                            <li>
+                                <i class="rightN">3</i>
+                                下单之前请一定要看完该商品的注意事项再进行下单！
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="select">
+                        <ul class="select-top">
+                            <li>
+                                <span class="one">分类</span>
+                                <span class="tow selecton"><samp>请选择商品类别</samp><i></i></span>
+                                <div class="select-zz" style="display: none">
+                                    <div class="select-show-ul">
+                                        <div class="select-show-li">
+                                            <input type="radio" checked name="bas">
+                                            <p>666</p>
+                                        </div>
+                                        <div class="select-show-li">
+                                            <input type="radio" name="bas">
+                                            <p>666</p>
+                                        </div>
+                                        <div class="select-show-li">
+                                            <input type="radio" name="bas">
+                                            <p>666</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <i></i>
+                            </li>
+                            <li>
+                                <span class="one">商品</span>
+                                <span class="tow three selecton"><samp>请选择购买商品</samp><i></i></span>
+                                <div class="select-zz" style="display: none">
+                                    <div class="select-show-ul">
+                                        <div class="select-show-li">
+                                            <input type="radio" checked name="basd">
+                                            <p>77777</p>
+                                        </div>
+                                        <div class="select-show-li">
+                                            <input type="radio" name="basd">
+                                            <p>99999</p>
+                                        </div>
+                                        <div class="select-show-li">
+                                            <input type="radio" name="basd">
+                                            <p>8888</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="one">价格</span>
+                                <span class="tow three">￥9.87<i></i></span>
+                            </li>
+                            <li>
+                                <span class="btm">加入购物车</span><span class="btm" id="success">立刻购买</span>
+                            </li>
+                        </ul>
+                        <ul class="select-foot">
+                            <li>
+                                <span><i class="left zd"></i>查单</span>
+                                <span>查单<i class="right"></i></span>
+                            </li>
+                            <li>
+                                <span><i class="left cj"></i>查单</span>
+                                <span>查单<i class="right"></i></span>
+                            </li>
+                            <li>
+                                <span><i class="left tg"></i>查单</span>
+                                <span>查单<i class="right"></i></span>
+                            </li>
+                            <li>
+                                <span><i class="left yw"></i>查单</span>
+                                <span>查单<i class="right"></i></span>
+                            </li>
+                        </ul>
+                        <ul class="select-number">
+                            <li>
+                                <span>订单数</span>
+                                <span>9999+</span>
+                            </li>
+                            <li>|</li>
+                            <li>
+                                <span>订单数</span>
+                                <span>9999+</span>
+                            </li>
+                            <li>|</li>
+                            <li>
+                                <span>订单数</span>
+                                <span>9999+</span>
+                            </li>
+                            <li>|</li>
+                            <li>
+                                <span>订单数</span>
+                                <span>9999+</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="success-zz" id="success-zz">
+                        <div class="success-box">
+                            <p>订单提交成功</p>
+                            <div class="success-content">
+                                <div class="success-content-text">
+                                    ￥8888
+                                </div>
+                                <div class="success-content-img">
+                                    <ul>
+                                        <li><img src="image/icon，zhifubao@2x.png" alt=""><span>支付宝</span></li>
+                                        <li><img src="image/icon，weixin@2x.png" alt=""><span>微信</span></li>
+                                        <li><img src="image/icon，qq@2x.png" alt=""><span>QQ</span></li>
+                                    </ul>
+                                </div>
+                                <div class="success-content-btn" id="success-off">
+                                    关闭
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notice-show-zz">
+                        <div class="notice-show">
+                            <div class="notice-show-top">
+                                <span>公告</span>
+                            </div>
+                            <div class="notice-show-middle">
+                                <div class="middle-ul">
+                                    <ul>
+                                        <li><i>1</i><span>活动：全站商品全网最低价格-分站限时免费搭建</span></li>
+                                        <li><i>1</i><span>活动：全站商品全网最低价格-分站限时免费搭建</span></li>
+                                        <li><i>1</i><span>活动：全站商品全网最低价格-分站限时免费搭建</span></li>
+                                        <li><i>1</i><span>活动：全站商品全网最低价格-分站限时免费搭建</span></li>
+                                        <li><i>1</i><span>活动：全站商品全网最低价格-分站限时免费搭建</span></li>
+                                        <li>
+                                            <span><a href="">下载</a></span>
+                                            <span>|</span>
+                                            <span><a href="">下载</a></span>
+                                            <span>|</span>
+                                            <span><a href="">下载</a></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="notice-show-foot">
+                                <img class="showfalg" src="image/icon，guanbi@2x.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="content-foot-box" id="foot">
+                <div class="content-foot">
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <img src="./image/icon，shouye@2x (2).png" alt="">
+                                <span class="active">首页</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="substation/index.html">
+                                <img src="./image/icon，fenzhan@2x.png" alt="">
+                                <span>分站</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="activity/index.html">
+                                <img src="./image/icon，huodong.png" alt="">
+                                <span>活动</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="user/index.html">
+                                <img src="./image/icon，wode@2x.png" alt="">
+                                <span>我的</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="fixed-box">
+            <div class="right-ul">
+                <ul>
+                    <li>
+                        <img src="image/icon，kefu@2x.png" alt="">
+                        <span>联系客服</span>
+                    </li>
+                    <li>
+                        <img src="image/icon，jiaoliuqun@2x.png" alt="">
+                        <span>技术交流群</span>
+                    </li>
+                    <li>
+                        <img src="image/fenzan 11@2x.png" alt="">
+                        <span>搭建分站</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            function clickShow() {
+                var showfalg = document.getElementsByClassName('showfalg')[0];
+                var noticeZ = document.querySelector('.notice-show-zz');
+                var noticBox = document.getElementById('noticBox');
+                showfalg.onclick = function () {
+                    noticeZ.style.display = 'none';
+                }
+                noticBox.onclick = function () {
+                    noticeZ.style.display = 'block';
+                }
+
+            }
+            clickShow();
+            function clickSelect() {
+                var selecton = document.querySelectorAll('.selecton');
+                //var selectzz = document.querySelector('.select-zz')
+                for (var y = 0; y < selecton.length; y++) {
+                    selecton[y].onclick = function () {
+                        this.nextElementSibling.style.display = "block";
+                        var _thisSelect = this;
+                        var lis = this.nextElementSibling.querySelectorAll('.select-show-li');
+                        for (var i = 0; i < lis.length; i++) {
+                            lis[i].onclick = function () {
+                                // console.log(this.querySelector('p').innerText)
+                                var dom = this.getElementsByTagName("p")[0].innerText;
+                                var radio = this.getElementsByTagName("input")[0].checked = true;
+                                console.log(radio)
+                                console.log(dom)
+                                _thisSelect.getElementsByTagName("samp")[0].innerText = dom;
+
+                                _thisSelect.nextElementSibling.style.display = 'none'
+                            }
+                        }
+                    }
+                }
+            }
+            clickSelect()
+            function successon() {
+                var success = document.getElementById('success');
+                var successzz = document.getElementById('success-zz');
+                var successoff = document.getElementById('success-off')
+                success.onclick = function () {
+                    successzz.style.display = 'block';
+                }
+                successoff.onclick = function () {
+                    successzz.style.display = 'none';
+                }
+            }
+            successon();
+        }
+
+
+    </script>
+</body>
+
+</html>

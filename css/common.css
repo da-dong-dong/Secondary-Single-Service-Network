@@ -1,0 +1,73 @@
+.content-foot-box {
+  width: 100%;
+  height: 0.78rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+}
+.content-foot {
+  width: 6.9rem;
+  margin: 0 auto;
+}
+.content-foot ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.content-foot ul li {
+  line-height: 0.24rem;
+  text-align: center;
+}
+.content-foot ul li a {
+  color: #666666;
+  font-size: 0.2rem;
+  text-decoration: none;
+}
+.content-foot ul li img {
+  height: 0.45rem;
+}
+.content-foot ul li span {
+  display: block;
+}
+.content-foot ul li .active {
+  color: #38a1f3;
+}
+.content .bags {
+  background: none;
+}
+.content .bags .content-foot {
+  background: #fff;
+  border-radius: 10px;
+}
+.flex-top-black {
+  background: #1a99f2;
+  width: 100%;
+  height: 1.4rem;
+  text-align: center;
+  position: fixed;
+  z-index: 99;
+}
+.flex-top-black .flex-left-img {
+  position: absolute;
+  width: 0.6rem;
+  left: 0.4rem;
+  bottom: 0.24rem;
+}
+.flex-top-black span {
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.32rem;
+  line-height: 1.8rem;
+}
+.flex-js {
+  left: 50%;
+  margin-left: -3.45rem;
+  width: 6.9rem;
+}
+@media only screen and (min-width: 768px) {
+  .container .content {
+    padding-top: 15px;
+    padding-bottom: 0.7rem;
+  }
+}

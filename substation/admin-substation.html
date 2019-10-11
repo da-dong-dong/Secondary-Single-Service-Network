@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>分站</title>
+    <script src="../js/font-size.js"> </script>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/substation/admin-substation.css" />
+</head>
+
+<body>
+    <div id="container" class="container">
+        <div class="content">
+            <div class="flex-top-black">
+                <img class="flex-left-img" src="../image/substation/icon，houtui@2x.png" alt="">
+                <span>分站管理中心</span>
+            </div>
+            <div class="content-admin">
+                <div class="admin-nav">
+                    <a href=""><img src="../image/substation/icon，dijia@2x.png" alt="">
+                        <p>低价下单</p>
+                    </a>
+                    <a href=""><img src="../image/substation/icon,ticheng@2x.png" alt="">
+                        <p>提成明细</p>
+                    </a>
+                    <a href=""><img src="../image/substation/icon,wangzhan@2x.png" alt="">
+                        <p>网站订单</p>
+                    </a>
+                    <a href=""><img src="../image/substation/icon,shangpin@2x.png" alt="">
+                        <p>商品加价</p>
+                    </a>
+                    <a href=""><img src="../image/substation/icon,tongzhi@2x.png" alt="">
+                        <p>站内通知</p>
+                    </a>
+                </div>
+                <div class="admin-content">
+                    <div class="admin-content-header">
+                        我的站点信息
+                    </div>
+                    <ul>
+                        <li>
+                            <span>提醒通知</span>
+                            <p>你当前有<strong>0</strong>信息被阅读</p>
+                            <a href="">立刻查看</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            function fiexdTop() {
+                var flextopblack = document.getElementsByClassName('flex-top-black')[0];
+                var docH = document.documentElement.clientHeight;
+                var docW = document.documentElement.clientWidth;
+                if (docW / docH > 1) {
+                    flextopblack.classList.add('flex-js');
+                }
+            }
+            fiexdTop();
+            function historyGo() {
+                var flexleftimg = document.getElementsByClassName('flex-left-img')[0];
+                flexleftimg.onclick = function () {
+                    window.history.go(-1)
+                }
+            }
+            historyGo()
+        }
+    </script>
+</body>
+
+</html>

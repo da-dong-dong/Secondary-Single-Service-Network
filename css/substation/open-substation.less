@@ -1,0 +1,156 @@
+@rem:1rem/100;
+.container{
+    background: #f4f4f4;
+}
+.content{
+  background: #f4f4f4;
+  overflow: hidden;
+}
+.content-open{
+    width: 690*@rem;
+    background: #fff;
+    border-radius: 10*@rem;
+    margin: 160*@rem auto 0;
+    box-shadow: 1px 2px 12px #d0d0d0;
+    ul{
+        padding: 20*@rem;
+        li{
+            padding-bottom: 10*@rem;
+            .open-btn{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-bottom: 10*@rem;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 25*@rem;
+                    font-weight: bold;
+                    width: 320*@rem;
+                    height: 80*@rem;
+                    background: #1a99f2;
+                    border-radius: 10*@rem;
+                    text-align: center;
+                    line-height: 80*@rem;
+                }
+            }
+            .open-li{
+                border: 1px solid #d0d0d0;
+                border-radius: 10*@rem;
+                height: 80*@rem;
+                position: relative;
+                span{
+                    display: inline-block;
+                    width: 200*@rem;
+                    height: 80*@rem;
+                    border-right: 1px solid #d0d0d0;
+                    text-align: center;
+                    line-height: 80*@rem;
+                }
+                input{
+                    width: 420*@rem;
+                    height: 75*@rem;
+                    border: 0;
+                    text-indent: 40*@rem;
+                    
+                }
+                i{
+                    position: absolute;
+                    right: 0;
+                    top: 12*@rem;
+                    width: 50*@rem;
+                    height: 50*@rem;
+                    background: url(../../image/substation/icon，gengduo@2x.png) no-repeat;
+                    background-size: cover;
+                }
+            }
+            .open-tow-li{
+                border: 1px solid #d0d0d0;
+                border-radius: 10*@rem;
+                height: 140*@rem;
+                position: relative;
+                &::after{
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+                .tow-left{
+                    width: 200*@rem;
+                    height: 140*@rem;
+                    text-align: center;
+                    line-height: 140*@rem;
+                    float: left;
+                }
+                .tow-right{
+                    float: left;
+                    width: 69%;
+                    p{
+                        font-size: 26*@rem;
+                        color: rgb(135, 153, 153);
+                        padding: 14.5*@rem 0;
+                        text-indent: 40*@rem;
+                    }
+                    input{
+                        width: 100%;
+                        height: 75*@rem;
+                        border: 1px solid #d0d0d0;
+                        text-indent: 40*@rem;
+                        border-radius: 10*@rem;
+                    }
+                    i{
+                        position: absolute;
+                        right: 0;
+                        bottom: 12*@rem;
+                        width: 50*@rem;
+                        height: 50*@rem;
+                        background: url(../../image/substation/icon，gengduo@2x.png) no-repeat;
+                        background-size: cover;
+                    }
+                }
+            }
+            .open-p{
+                text-align: center;
+                color: rgb(153, 153, 153);
+                font-size: 22*@rem;
+            }
+        }
+    }
+}
+.open-ok{
+    width: 690*@rem;    
+    background: #fff;
+    border-radius: 10*@rem;
+    box-shadow: 1px 2px 12px #d0d0d0;
+    margin: 20*@rem auto 0;
+    height: 190*@rem;
+    padding-top: 20*@rem;
+    .ok-btn{
+        width: 650*@rem;
+        height: 80*@rem;
+        display: block;
+        background: #1a99f2;
+        color: #fff;
+        font-size: 26*@rem;
+        font-weight: bold;
+        margin: 0 auto 38*@rem;
+        border: 0;
+        border-radius: 10*@rem;
+    }
+    .back-text{
+        
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        i{
+            img{
+                width: 0.3rem;
+    vertical-align: text-bottom;
+            }
+        }
+        a{
+            color: #1a99f2;
+            text-decoration: none;
+            font-size: 24*@rem;
+        }
+    }
+}

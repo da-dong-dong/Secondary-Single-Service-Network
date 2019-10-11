@@ -1,0 +1,84 @@
+@rem:1rem/100;
+
+.content-foot-box{
+    width: 100%;
+    height: 78*@rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+}
+.content-foot{
+    width: 6.9rem;
+    margin: 0 auto;
+  ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    li{
+      line-height: 24*@rem;
+      text-align: center;
+      a{
+          color: #666666;
+          font-size: 20*@rem;
+          text-decoration: none;
+      }
+      img{
+       
+        height: 45*@rem;
+      }
+      span{
+        display: block;
+      }
+      .active{
+        color: #38a1f3
+      }
+    }
+  }
+}
+.content {
+    .bags{
+        background: none;
+        .content-foot{
+            background: #fff;
+            border-radius: 10px;
+        }
+    }
+}
+//顶部返回
+.flex-top-black{
+    background: #1a99f2;
+    width: 100%;
+    height: 140*@rem;
+    text-align: center;
+    position: fixed;
+    z-index: 99;
+    .flex-left-img{
+        position: absolute;
+        width: 60*@rem;
+        left: 40*@rem;
+        bottom: 24*@rem;
+    }
+    span{
+        color: #fff;
+        font-weight: bold;
+        font-size: 32*@rem;
+        line-height: 180*@rem;
+    }
+}
+.flex-js{
+    left: 50%;
+    margin-left: -3.45rem;
+    width: 690*@rem;
+}
+
+//pc兼容
+
+@media only screen and (min-width: 768px) {
+    .container{
+        .content{
+            padding-top: 15px;
+            padding-bottom: 70*@rem;
+        }
+    }
+}
