@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>活动详情</title>
+    <script src="../js/font-size.js"> </script>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/activity/detail-activity.css" />
+</head>
+
+<body>
+    <div id="container" class="container">
+        <div class="content">
+            <div class="flex-top-black">
+                <img class="flex-left-img" src="../image/substation/icon，houtui@2x.png" alt="">
+                <span>活动详情</span>
+            </div>
+
+            <div class="activity-detail">
+                <div class="detail-header">
+                    <p>2015赛季FIFA Online3 职业联赛</p>
+                    <p>巅峰之路 由此开启</p>
+                    <span>2019.08.11 星期日</span>
+                </div>
+                <div class="detail-img">
+                    <img src="" alt="">
+                </div>
+                <div class="detail-text">
+                    <p>值得一提的是，澎湃新闻从项目书中发现，按照项目最初的实施计划，总共分三期建设，施工周期历时4年，最晚截止日期为今年6月30日。
+
+                        至于为何该项目的开发过程长达八年还未结束，长实表示，该项目发展期长是因为政府延迟交地所致，目前项目部分楼体已近封顶。
+
+                        对于本次交易，长实称过去10年来，其在内地的物业销售收入平均每年约为280亿港元，出售大连西岗山黑嘴子项目只相当于不足公司两个月的平均收入。
+
+                        融创方面则表示对此不予回应。
+
+                        2011年12月2日，和记黄埔有限公司公告，公司以总代价19亿元竞得大连市西岗区黑嘴子码头及周边地块，收购后将供发展成住宅及商业物业。公司已与大连市国土局协定并将签订土地使用权出让合同。项目信息披露，该土地的总面积约14.29万平方米，项目公司大连达连房地产开发有限公司（长实及和黄各自间接拥有50%权益）初步投资总额及注册资本目前均订为19.19亿元，并预期之后的投资将分别增加至相等于7亿美元及5亿美元金额等值的人民币。
+
+                        2011年至今，从李嘉诚拿下这宗地块之后，该项目的开发周期长达八年仍未完工。
+
+                        资料显示，该项目规划总用地面积约为14.29万平方米，总建筑面积72.58万平方米，由A区、B区、C区和D区四块场地组成，规划内容包括住宅、公寓、配套公建（幼儿园、办公楼、酒店、商场、会所等）及地下车库。按照规划，地上建筑24栋，其中8栋为37-40层不等的独立住宅，10栋办公楼（其中9栋为2层办公楼，1栋为26层办公楼），1栋33曾公寓，1座2层酒店，1座2层会所（地上地下各一层），1座3层幼儿园，1栋4层商场/办公混合建筑和1个垃圾收集站，同时配套建设2个地下车库。
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            function fiexdTop() {
+                var flextopblack = document.getElementsByClassName('flex-top-black')[0];
+                var detailheader = document.getElementsByClassName('detail-header')[0];
+                var docH = document.documentElement.clientHeight;
+                var docW = document.documentElement.clientWidth;
+                if (docW / docH > 1) {
+                    flextopblack.classList.add('flex-js');
+                    detailheader.style.textAlign = 'center';
+                }
+            }
+            fiexdTop();
+            function historyGo() {
+                var flexleftimg = document.getElementsByClassName('flex-left-img')[0];
+                flexleftimg.onclick = function () {
+                    window.history.go(-1)
+                }
+            }
+            historyGo()
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>推广链接</title>
+    <script src="../js/font-size.js"> </script>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/activity/extension.css" />
+</head>
+
+<body>
+    <div id="container" class="container">
+        <div class="content">
+            <div class="flex-top-black">
+                <img class="flex-left-img" src="../image/substation/icon，houtui@2x.png" alt="">
+                <span>推广链接生成</span>
+            </div>
+
+            <div class="extension">
+                <div class="extension-header">
+                    <p>注：复制链接与宣传语到qq群，微信，空间等个个地方宣传，用户访问并购买商品后，，，，，，，，，，，，，，，，，，，，，</p>
+                </div>
+                <div class="extension-input">
+                    <span>您的QQ号</span>
+                    <input type="text" placeholder="请输入正确的QQ号">
+                </div>
+                <div class="extension-btn">
+                    <span>立即生成推广链接</span>
+                    <div class="back-btn">
+                        <a href="">返回首页</a>
+                        <a href="">开通分站</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            function fiexdTop() {
+                var flextopblack = document.getElementsByClassName('flex-top-black')[0];
+                var docH = document.documentElement.clientHeight;
+                var docW = document.documentElement.clientWidth;
+                if (docW / docH > 1) {
+                    flextopblack.classList.add('flex-js');
+                }
+            }
+            fiexdTop();
+            function historyGo() {
+                var flexleftimg = document.getElementsByClassName('flex-left-img')[0];
+                flexleftimg.onclick = function () {
+                    window.history.go(-1)
+                }
+            }
+            historyGo()
+        }
+    </script>
+</body>
+
+</html>

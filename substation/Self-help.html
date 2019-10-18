@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>自助下单</title>
+    <script src="../js/font-size.js"> </script>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/substation/Self-help.css" />
+</head>
+
+<body>
+    <div id="container" class="container">
+        <div class="content">
+            <div class="flex-top-black">
+                <img class="flex-left-img" src="../image/substation/icon，houtui@2x.png" alt="">
+                <span>自助下单</span>
+            </div>
+
+            <div class="self-help">
+                <div class="self-help-header">
+                    <h2>￥9.82</h2>
+                    <p>余额</p>
+                </div>
+                <div class="self-help-content">
+                    <div class="content-tab">
+                        <span>在线下单</span>
+                        <samp>|</samp>
+                        <span class="span-active">查询订单</span>
+                    </div>
+                    <div class="content-viwe">
+                        <ul>
+                            <li>
+                                <span>待处理</span>
+                                <p>说明正在努力提交到服务器！</p>
+                            </li>
+                            <li>
+                                <span>待处理</span>
+                                <p>说明正力提交到服务器！</p>
+                            </li>
+                            <li>
+                                <span class="yellow">待处理</span>
+                                <p>说明正在努fff力提交到服务器！</p>
+                            </li>
+                            <li>
+                                <span class="errs">待处理</span>
+                                <p>说明正在努力FFF提交到服务器！</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="extension-input">
+                        <span>查询内容</span>
+                        <input type="text" placeholder="请输入下单账号（留下空格根据预览）">
+                    </div>
+                    <div class="content-btn">
+                        <span>立刻查询</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            function fiexdTop() {
+                var flextopblack = document.getElementsByClassName('flex-top-black')[0];
+                var docH = document.documentElement.clientHeight;
+                var docW = document.documentElement.clientWidth;
+                if (docW / docH > 1) {
+                    flextopblack.classList.add('flex-js');
+                }
+            }
+            fiexdTop();
+            function historyGo() {
+                var flexleftimg = document.getElementsByClassName('flex-left-img')[0];
+                flexleftimg.onclick = function () {
+                    window.history.go(-1)
+                }
+            }
+            historyGo()
+            function clickSpan() {
+                var contenttab = document.getElementsByClassName("content-tab")[0];
+                var span = contenttab.getElementsByTagName('span');
+                for (var i = 0; i < span.length; i++) {
+                    span[i].onclick = function () {
+                        contenttab.getElementsByClassName('span-active')[0].className = '';
+                        this.className = 'span-active'
+                    }
+                }
+            }
+            clickSpan()
+        }
+    </script>
+</body>
+
+</html>

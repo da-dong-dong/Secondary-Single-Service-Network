@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <script src="../js/font-size.js"></script>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/login/login.css" />
+</head>
+<body>
+    <div class="wrapper" id="container">
+        <div class="container">
+            <div class="content">
+                <!-- 登录、注册按钮 -->
+                <div class="header">
+                    <ul>
+                        <li data-index="0" class="active">微信扫码登录</li>
+                        <li data-index="1">账户密码登录</li>
+                    </ul>
+                </div>
+                <div class="weix">
+                    <div class="codeBox">
+                        <div class="imgBox">
+                            <div class="code"></div>
+                        </div>
+                    </div>
+                    <p>用微信扫描二维码即可登录</p>
+                </div>
+                <div class="user" >
+                    <!-- 头像 -->
+                    <div class="titleImg"></div>
+                    <!-- 登录 输入控件 -->
+                    <div class="fromData">
+                        <div class="_row">
+                            <span class="left">
+                                <img src="../image/形状 2@2x.png" alt="">
+                            </span>
+                            <div class="right">
+                                <input type="text" placeholder="用户名">
+                            </div>
+                        </div>
+                        <div class="_row">
+                            <span class="left">
+                                <img src="../image/形状 3@2x.png" alt="">
+                            </span>
+                            <div class="right">
+                                <input type="text" placeholder="密码">
+                            </div>
+                        </div>
+                        <div class="submit">立即登录</div>
+                    </div>
+                    <!-- 找回密码 -->
+                    <div class="find-sign">
+                        <ul>
+                            <li>
+                                <span><img src="../image/形状 3.png" alt=""></span>
+                                <span>找回密码</span>
+                            </li>
+                            <li>
+                                <span><img src="../image/形状 5.png" alt=""></span>
+                                <span>注册账号</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="backIndex">返回首页</div>
+        </div>
+    </div>
+
+    <script>
+        var weix = document.getElementsByClassName("weix")[0];
+        var user = document.getElementsByClassName("user")[0];
+        var aLi =  document.getElementsByClassName("header")[0].getElementsByTagName("li");
+        for(var i=0; i<aLi.length; i++){
+            aLi[i].onclick = function(e){
+                document.getElementsByClassName("active")[0].className = ''
+                this.className = 'active'
+                if(this.dataset.index == 0){
+                    weix.style.display = "block"
+                    user.style.display = "none"
+                }else if(this.dataset.index == 1){
+                    weix.style.display = "none"
+                    user.style.display = "block"
+                }
+            }
+        }
+        
+    </script>
+</body>
+</html>

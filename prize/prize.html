@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>幸运大抽奖</title>
+    <script src="../js/font-size.js"></script>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/prize/prize.css" />
+</head>
+<body>
+    <div class="wrapper" id="container">
+        <div class="content">
+            <div class="header">今日抽奖次数: 3次</div>
+            <div class="itemList">
+                <div class="itemListBox">
+                    <ul>
+                        <li id="d1">1</li>
+                        <li id="d2">2</li>
+                        <li id="d3">3</li>
+                        <li id="d4">4</li>
+                    </ul>
+                    <ul>
+                        <li id="d12">12</li>
+                        <li id="d5">5</li>
+                    </ul>
+                    <ul>
+                        <li id="d11">11</li>
+                        <li id="d6">6</li>
+                    </ul>
+                    <ul>
+                        <li id="d10">10</li>
+                        <li id="d9">9</li>
+                        <li id="d8">8</li>
+                        <li id="d7">7</li>
+                    </ul>
+                    <div class="player">
+                        <div>GO</div>
+                        <p>抽奖</p>
+                    </div>
+                </div>
+            </div>
+            <div class="submit">领取礼品</div>
+        </div>
+    </div>
+
+    <script>
+        (function(){
+            let arrDom = [], num = 0, count = 0, flag = true, timeOut = 50, index = 0,// 抽奖ID初始化
+                play = document.getElementsByClassName("player")[0];
+            for(var i=1; i<=12; i++){
+                arrDom.push(document.getElementById("d"+ i))
+            }
+
+            play.onclick = function(){
+                timerPlayer()
+            }
+            function timerPlayer(){
+                if(flag){
+                    flag = false
+                    var timer = setInterval(() => {
+                        if(document.getElementsByClassName("active").length) {
+                            document.getElementsByClassName("active")[0].className = "";
+                        }
+                        arrDom[num].className = "active"
+                        num++;
+                        count++;
+                        if(num == 12) num = 0;
+                        if(count == 24){
+                            clearInterval(timer)
+                            flag = true
+                            count = 0;
+                            index = parseInt(Math.random() * 12);
+                            actionPlay()
+                        }   
+                    }, 50);
+                }
+            }
+            function actionPlay(){
+                if(document.getElementsByClassName("active").length) {
+                    document.getElementsByClassName("active")[0].className = "";
+                }
+                timeOut = timeOut + 70;
+                arrDom[num].className = "active"
+                num++;
+                count++;
+                if(num == 12) num = 0;
+                if(count == index){
+                    console.log("抽奖id", index)
+                    count = 0;
+                    timeOut = 50
+                    num = 0;
+                }else{
+                    setTimeout(() => {
+                        actionPlay()
+                    }, timeOut);
+                }   
+            }
+        })()
+    </script>
+</body>
+</html>
