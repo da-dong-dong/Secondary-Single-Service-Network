@@ -29,12 +29,75 @@
     .admin-content{
         background: #fff;
         border-radius: 10*@rem;
+        margin-top: 10*@rem;
         .admin-content-header{
             width: 100%;
-            border-bottom: 1px solid #d0d0d0;
+            border-bottom: 1px solid #efefef;
             text-align: center;
             font-size: 24*@rem;
             padding:20*@rem 0;
+        }
+        ul{
+            padding:14*@rem 44*@rem;
+            li{
+                border-bottom: 1px solid #efefef;
+                font-size: 20*@rem;
+                text-align: center;
+                padding-bottom: 12*@rem;
+                padding-top: 12*@rem;
+                position: relative;
+                height: 25*@rem;
+                span{
+                    font-weight: bold;
+                    float: left;
+                }
+                
+                .header-right{
+                    float: left;
+                    padding-left: 108*@rem;
+                    
+                }
+                .yellow{
+                    color: #ff9d34;
+                }
+                .green{
+                    color: #1af21f;
+                }
+                a{
+                    position: absolute;
+                    right: 0;
+                    top: 10*@rem;
+                    display: inline-block;
+                    color: #fff;
+                    width: 100*@rem;
+                    height: 30*@rem;
+                    background: #1a99f2;
+                    text-decoration: none;
+                    line-height: 30*@rem;
+                }
+                .yellowbg{
+                    background: #ff9d34;
+                }
+            }
+        }
+    }
+    .admin-a-btn{
+       
+        margin-top: 20*@rem;
+        a{
+            width: 100%;
+            height: 60*@rem;
+            display: inline-block;
+            background: #1a99f2;
+            border-radius: 10*@rem;
+            text-align: center;
+            color: #fff;
+            text-decoration: none;
+            line-height: 60*@rem;
+            img{
+                width: 30*@rem;
+                vertical-align: text-bottom;
+            }
         }
     }
 }

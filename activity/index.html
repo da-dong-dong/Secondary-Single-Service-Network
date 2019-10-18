@@ -9,12 +9,139 @@
     <script src="../js/font-size.js"> </script>
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/activity/activity.css">
 </head>
 
 <body>
     <div id="container" class="container">
         <div class="content">
-            我是活动
+            <div class="content-activity">
+                <div class="activity-banner">
+
+                </div>
+                <div class="activety-input">
+                    <i></i>
+                    <input type="text" placeholder="输入关键字，支持关键字搜索，以空格隔开">
+                </div>
+                <div class="activety-ul">
+                    <span class="span-cative">活动线报</span>
+                    <span>活动线报</span>
+                    <span>活动线报</span>
+                    <span>活动线报</span>
+                </div>
+                <div class="activety-li">
+                    <ul>
+                        <li>
+                            <a href="detail-activity.html">
+                                <div class="li-content">
+                                    <img src="" alt="" class="li-img col">
+
+                                    <div class="li-div col">
+                                        <span>活动名称</span>
+                                        <p>活动那个到第一个活动那个的过度情况，注意或要时尚大方</p>
+                                    </div>
+
+                                    <p class="li-p col">2019.08.11星期一</p>
+                                </div>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="detail-activity.html">
+                                <div class="li-content">
+                                    <img src="" alt="" class="li-img col">
+
+                                    <div class="li-div col">
+                                        <span>活动名称</span>
+                                        <p>活动那个到第一个活动那个的过度情况，注意或要时尚大方</p>
+                                    </div>
+
+                                    <p class="li-p col">2019.08.11星期一</p>
+                                </div>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="detail-activity.html">
+                                <div class="li-content">
+                                    <img src="" alt="" class="li-img col">
+
+                                    <div class="li-div col">
+                                        <span>活动名称</span>
+                                        <p>活动那个到第一个活动那个的过度情况，注意或要时尚大方</p>
+                                    </div>
+
+                                    <p class="li-p col">2019.08.11星期一</p>
+                                </div>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="detail-activity.html">
+                                <div class="li-content">
+                                    <img src="" alt="" class="li-img col">
+
+                                    <div class="li-div col">
+                                        <span>活动名称</span>
+                                        <p>活动那个到第一个活动那个的过度情况，注意或要时尚大方</p>
+                                    </div>
+
+                                    <p class="li-p col">2019.08.11星期一</p>
+                                </div>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="detail-activity.html">
+                                <div class="li-content">
+                                    <img src="" alt="" class="li-img col">
+
+                                    <div class="li-div col">
+                                        <span>活动名称</span>
+                                        <p>活动那个到第一个活动那个的过度情况，注意或要时尚大方</p>
+                                    </div>
+
+                                    <p class="li-p col">2019.08.11星期一</p>
+                                </div>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="detail-activity.html">
+                                <div class="li-content">
+                                    <img src="" alt="" class="li-img col">
+
+                                    <div class="li-div col">
+                                        <span>活动名称</span>
+                                        <p>活动那个到第一个活动那个的过度情况，注意或要时尚大方</p>
+                                    </div>
+
+                                    <p class="li-p col">2019.08.11星期一</p>
+                                </div>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="detail-activity.html">
+                                <div class="li-content">
+                                    <img src="" alt="" class="li-img col">
+
+                                    <div class="li-div col">
+                                        <span>活动名称</span>
+                                        <p>活动那个到第一个活动那个的过度情况，注意或要时尚大方</p>
+                                    </div>
+
+                                    <p class="li-p col">2019.08.11星期一</p>
+                                </div>
+                            </a>
+
+                        </li>
+                    </ul>
+                    <div class="activety-bottom">
+                        <img src="../image/icon,chakan@2x.png" alt="">
+                    </div>
+                </div>
+            </div>
             <div id="foot" class="content-foot-box">
                 <div class="content-foot">
                     <ul>
@@ -48,7 +175,28 @@
 
         </div>
     </div>
+    <script>
+        window.onload = function () {
+            function clickSpan() {
+                var activetyul = document.getElementsByClassName('activety-ul')[0];
+                var span = activetyul.getElementsByTagName('span');
+                for (var i = 0; i < span.length; i++) {
+                    span[i].onclick = function () {
+                        // for (let j = 0; j < span.length; j++) {
+                        //     if (i != j) {
+                        //         span[j].classList.remove('span-cative')
+                        //     }
+                        // }
+                        // this.classList.add('span-cative');
+                        activetyul.getElementsByClassName('span-cative')[0].className = ''
+                        this.className = 'span-cative'
 
+                    }
+                }
+            }
+            clickSpan()
+        }
+    </script>
 </body>
 
 </html>

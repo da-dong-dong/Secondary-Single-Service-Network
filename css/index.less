@@ -67,6 +67,9 @@
           text-indent: 40*@rem;
           padding-top: 8*@rem;
           font-size: 22*@rem;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
           &:first-of-type{
             font-size: 24*@rem;
           }
@@ -112,7 +115,7 @@
           width: 650*@rem;
           margin: 0 auto;
           li{
-            height: 60*@rem;
+            height: 50*@rem;
             border: 1px solid #d0d0d0;
             border-radius: 5px;
             position: relative;
@@ -122,9 +125,9 @@
               text-align: center;
               display: inline-block;
               background: #eeeeee;
-              height: 60*@rem;
+              height: 50*@rem;
               width: 150*@rem;
-              line-height: 60*@rem;
+              line-height: 50*@rem;
               border-right: 1px solid #d0d0d0;
             }
             .tow{
@@ -142,7 +145,7 @@
               }
             }
             .three{
-              width: 486*@rem;
+              width: 480*@rem;
               background: #fff;
               border: 0;
               box-sizing: border-box;
@@ -161,6 +164,30 @@
                 border-radius:  0 5px  5px 0;
               }
             }
+            .li-input{
+                background: #fff;
+                
+                border: 0;
+                width: 480*@rem;
+                height: 100%;
+                vertical-align: top;
+                
+            }
+            .btn{
+                width: 340*@rem;
+                text-align: center;
+            }
+            .btn-num{
+                width: 50*@rem;
+                height: 50*@rem;
+                font-size: 30*@rem;
+                color: #fff;
+                margin-left: 10*@rem;
+                display: inline-block;
+                background: #1a99f2;
+                text-align: center;
+                line-height: 50*@rem;
+            }
            &:last-of-type{
              border: 0;
            }
@@ -173,6 +200,9 @@
               background:url(../image/icon，sousuo@2x.png) no-repeat;
               background-size: 100%;
             }
+          }
+          .li-showfalg{
+              display: none;
           }
           .select-zz{
             position: fixed;
@@ -202,9 +232,50 @@
                     border-bottom: 1px solid #d0d0d0;
                     padding: 18*@rem 0;
                     input{
+                        display: none;
                         width: 25*@rem;
                         height: 25*@rem;
                     }
+                    p{
+                        flex: 5;
+                        text-align: center;
+                    }
+                    label{
+                        flex:3;
+                        text-align: center;
+                    }
+                    .b-radio{
+                        display: inline-block;
+                        border:1px solid #d0d0d0;
+                        width: 25*@rem;
+                        height: 25*@rem;
+                        border-radius:20*@rem;
+                        vertical-align: middle;
+                        margin-right: 5*@rem;
+                        position: relative;
+                       
+                    }
+                    .b-radio:before{
+                        content: '';
+                        font-size: 0;
+                        width: 15*@rem;
+                        height: 15*@rem;
+                        background:#fff;
+                        position: absolute;
+                        left:50%;
+                        top:50%;
+                        margin-left: -7.5*@rem;
+                        margin-top: -7.5*@rem;
+                        border-radius: 20*@rem;
+                        display: none;
+                    }
+                    .a-radio:checked~.b-radio:before{
+                        display: block;
+                    }
+                    .a-radio:checked~.b-radio{
+                        background: #1a99f2;
+                    }
+             
                 }
             }
          }
@@ -367,7 +438,10 @@
             height: 740*@rem;
             background: #fff; 
             border-radius: 20*@rem;
-            margin: 280*@rem auto 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
             .notice-show-top{
                 border-bottom: 1px solid #d1d1d1;
                 text-align:center;
@@ -393,6 +467,9 @@
                             color: rgb(102, 102, 102);
                             border-bottom: 1px solid #d0d0d0;
                             padding: 14*@rem 0;
+                            text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
                             i{
                                 width: 45*@rem;
                                 height: 45*@rem;
@@ -571,6 +648,9 @@
 
 // }
 //pc兼容
+.indexgb{
+    background: rgba(24, 25, 24,0.1);
+}
 
 @media only screen and (min-width: 768px) {
     .container{

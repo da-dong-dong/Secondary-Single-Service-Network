@@ -36,17 +36,20 @@
                             </li>
                             <li>
                                 <i class="rightN">1</i>
-                                售后问题可直接联系平台在线QQ客服
+                                <span>售后问题可直接联系平台在线QQ客服</span>
+
 
                             </li>
                             <li>
                                 <i class="rightN">2</i>
-                                价格贵？不怕，点击0元搭建，在后台超低价下单！
+                                <span> 价格贵？不怕，点击0元搭建，在后台超低价下单！</span>
+
 
                             </li>
                             <li>
                                 <i class="rightN">3</i>
-                                下单之前请一定要看完该商品的注意事项再进行下单！
+                                <span>下单之前请一定要看完该商品的注意事项再进行下单！</span>
+
 
                             </li>
                         </ul>
@@ -59,16 +62,25 @@
                                 <div class="select-zz" style="display: none">
                                     <div class="select-show-ul">
                                         <div class="select-show-li">
-                                            <input type="radio" checked name="bas">
-                                            <p>666</p>
+                                            <label>
+                                                <input type="radio" checked name="bas" class="a-radio">
+                                                <span class="b-radio"></span>
+                                            </label>
+                                            <p>qq钻</p>
                                         </div>
                                         <div class="select-show-li">
-                                            <input type="radio" name="bas">
-                                            <p>666</p>
+                                            <label>
+                                                <input type="radio" name="bas" class="a-radio">
+                                                <span class="b-radio"></span>
+                                            </label>
+                                            <p>qq钻</p>
                                         </div>
                                         <div class="select-show-li">
-                                            <input type="radio" name="bas">
-                                            <p>666</p>
+                                            <label>
+                                                <input type="radio" name="bas" class="a-radio">
+                                                <span class="b-radio"></span>
+                                            </label>
+                                            <p>qq钻</p>
                                         </div>
                                     </div>
                                 </div>
@@ -80,16 +92,25 @@
                                 <div class="select-zz" style="display: none">
                                     <div class="select-show-ul">
                                         <div class="select-show-li">
-                                            <input type="radio" checked name="basd">
-                                            <p>77777</p>
+                                            <label>
+                                                <input type="radio" checked name="basd" class="a-radio">
+                                                <span class="b-radio"></span>
+                                            </label>
+                                            <p>qq钻</p>
                                         </div>
                                         <div class="select-show-li">
-                                            <input type="radio" name="basd">
-                                            <p>99999</p>
+                                            <label>
+                                                <input type="radio" name="basd" class="a-radio">
+                                                <span class="b-radio"></span>
+                                            </label>
+                                            <p>qq钻</p>
                                         </div>
                                         <div class="select-show-li">
-                                            <input type="radio" name="basd">
-                                            <p>8888</p>
+                                            <label>
+                                                <input type="radio" name="basd" class="a-radio">
+                                                <span class="b-radio"></span>
+                                            </label>
+                                            <p>qq钻</p>
                                         </div>
                                     </div>
                                 </div>
@@ -97,6 +118,20 @@
                             <li>
                                 <span class="one">价格</span>
                                 <span class="tow three">￥9.87<i></i></span>
+                            </li>
+                            <li class="li-showfalg">
+                                <span class="one">数量</span>
+                                <input type="text" class="li-input btn" value="10">
+                                <samp class="btn-num" data-num="2">-</samp>
+                                <samp class="btn-num" data-num='1'>+</samp>
+                            </li>
+                            <li class="li-showfalg">
+                                <span class="one">下单QQ</span>
+                                <input type="text" class="li-input">
+                            </li>
+                            <li class="li-showfalg">
+                                <span class="one">QQ密码</span>
+                                <input type="text" class="li-input">
                             </li>
                             <li>
                                 <span class="btm">加入购物车</span><span class="btm" id="success">立刻购买</span>
@@ -262,6 +297,11 @@
             clickShow();
             function clickSelect() {
                 var selecton = document.querySelectorAll('.selecton');
+                var lishowfalg = document.querySelectorAll('.li-showfalg');
+                var btnnum = document.getElementsByClassName('btn-num');
+                var btn = document.getElementsByClassName('btn')[0];
+
+
                 //var selectzz = document.querySelector('.select-zz')
                 for (var y = 0; y < selecton.length; y++) {
                     selecton[y].onclick = function () {
@@ -273,12 +313,30 @@
                                 // console.log(this.querySelector('p').innerText)
                                 var dom = this.getElementsByTagName("p")[0].innerText;
                                 var radio = this.getElementsByTagName("input")[0].checked = true;
-                                console.log(radio)
-                                console.log(dom)
+                                // console.log(radio)
+                                // console.log(dom)
                                 _thisSelect.getElementsByTagName("samp")[0].innerText = dom;
 
-                                _thisSelect.nextElementSibling.style.display = 'none'
+                                _thisSelect.nextElementSibling.style.display = 'none';
+                                //添加qq
+                                // console.log(lishowfalg.length)
+                                for (var j = 0; j < lishowfalg.length; j++) {
+                                    lishowfalg[j].className = '';
+                                }
                             }
+                        }
+                    }
+                }
+                //num
+                for (var o = 0; o < btnnum.length; o++) {
+                    btnnum[o].onclick = function () {
+                        var data = this.getAttribute('data-num');
+
+                        if (data == 1) {
+                            btn.value = parseInt(btn.value) + 1
+
+                        } else {
+                            btn.value = parseInt(btn.value) - 1
                         }
                     }
                 }

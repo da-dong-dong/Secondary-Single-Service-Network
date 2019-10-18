@@ -6,8 +6,8 @@
             var clientHeight = docEl.clientHeight;
             if (!clientWidth) return;
             if (clientWidth / clientHeight > 1) {
-                docEl.style.fontSize = '70px';
-                doc.getElementById('container').style.background = '#f4f4f4';
+                docEl.style.fontSize = '75px';
+                doc.getElementById('container').classList.add('indexgb')
                 if (doc.getElementById('foot')) {
                     doc.getElementById('foot').classList.add('bags');
                 }

@@ -112,6 +112,7 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  margin-bottom: 0.1rem;
 }
 .content-box .content-box-paddin .content-foot-btn ul li .substation-btn {
   display: flex;
